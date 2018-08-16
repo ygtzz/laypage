@@ -17,6 +17,7 @@
             ,count: 500 //数据总数，从服务端得到
             ,limit:50
             ,limits:[10,20,30]
+            ,layout:['prev','page','next','count','limit','refresh','skip']
             ,jump: function(obj, first){
                 //obj包含了当前分页的所有参数，比如：
                 console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
